@@ -151,7 +151,11 @@ nav {
             width: 24px;
             height: 24px;
         }
+        &:hover {
+            cursor: pointer;
+        }
     }
+    
 }
 
 .container {
