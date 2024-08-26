@@ -131,6 +131,9 @@ nav .nav-icon img {
   width: 24px;
   height: 24px;
 }
+nav .nav-icon:hover {
+  cursor: pointer;
+}
 
 .container {
   width: 1440px;
@@ -915,7 +918,6 @@ footer .footer-section-newslettter-bottom .footer-section-newslettter-bottom-pay
     background-color: #FFFFFF;
     max-width: 390px;
     margin: 0px auto;
-    margin: auto 50%;
   }
   header {
     background-color: #000000;
@@ -1765,9 +1767,11 @@ footer .footer-section-newslettter-bottom .footer-section-newslettter-bottom-pay
 @media only screen and (max-width: 390px) {
   body {
     background-color: #FFFFFF;
-    max-width: 390px;
-    margin: 0px auto;
-    margin: auto 50%;
+    max-width: 100%;
+    width: auto;
+    height: 100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
   }
   header {
     background-color: #000000;
@@ -1775,7 +1779,7 @@ footer .footer-section-newslettter-bottom .footer-section-newslettter-bottom-pay
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 390px;
+    max-width: 100%;
     height: 34px;
     position: relative;
     overflow: hidden;
@@ -1801,9 +1805,11 @@ footer .footer-section-newslettter-bottom .footer-section-newslettter-bottom-pay
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-width: 390px;
+    max-width: 100%;
     height: 48px;
-    margin: 10px;
+    padding: 10px;
+    margin: 0;
+    box-sizing: border-box;
   }
   nav .fa-solid.fa-bars {
     display: block;
@@ -1864,10 +1870,11 @@ footer .footer-section-newslettter-bottom .footer-section-newslettter-bottom-pay
     height: 24px;
   }
   .container {
-    max-width: 390px;
+    max-width: 100%;
     height: 853px;
     background-color: #f2f0f1;
     color: #000000;
+    box-sizing: border-box;
     position: relative;
     overflow: hidden;
   }
@@ -1876,6 +1883,7 @@ footer .footer-section-newslettter-bottom .footer-section-newslettter-bottom-pay
     width: 390px;
     height: auto;
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;
     position: relative;
   }
@@ -2015,7 +2023,8 @@ footer .footer-section-newslettter-bottom .footer-section-newslettter-bottom-pay
     margin-left: 100px;
   }
   footer.container-footer {
-    max-width: 390px;
+    overflow: hidden;
+    max-width: 100%;
     height: 146px;
     background-color: #000000;
     box-sizing: border-box;
@@ -2031,6 +2040,8 @@ footer .footer-section-newslettter-bottom .footer-section-newslettter-bottom-pay
     max-width: 390px;
     height: 122px;
     margin: 0 15px;
+    margin-top: -10px;
+    box-sizing: border-box;
   }
   .logo-container-footer img:nth-child(1) {
     grid-column: 1;
@@ -2284,7 +2295,7 @@ footer .footer-section-newslettter-bottom .footer-section-newslettter-bottom-pay
   }
   .rading-our-happy-customes {
     height: auto;
-    width: 390px;
+    width: 100%;
     position: relative;
     margin: 0px;
     padding: 0px 10px 0px 10px;
@@ -2295,9 +2306,10 @@ footer .footer-section-newslettter-bottom .footer-section-newslettter-bottom-pay
   .rading-our-happy-customes .rating-title {
     max-width: 380px;
     height: 72px;
-    margin: 50px 0px 0px 10px;
+    margin: 30px 0;
+    box-sizing: border-box;
     font-weight: 700;
-    padding: 0px;
+    padding: 10px;
     align-items: end;
   }
   .rading-our-happy-customes .rating-title h2 {
@@ -2310,7 +2322,6 @@ footer .footer-section-newslettter-bottom .footer-section-newslettter-bottom-pay
   .rading-our-happy-customes .rating-title .rating-icon {
     font-weight: 800;
     font-size: 1em;
-    margin-bottom: 25px;
     box-sizing: border-box;
   }
   .rading-our-happy-customes .rating-container {
@@ -2353,7 +2364,7 @@ footer .footer-section-newslettter-bottom .footer-section-newslettter-bottom-pay
   }
   footer {
     margin-top: 140px;
-    max-width: 390px;
+    max-width: 100%;
     height: 846px;
     background-color: #F0F0F0;
     color: #000000;
