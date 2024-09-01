@@ -2345,6 +2345,7 @@ body footer .footer-section-newslettter-bottom .footer-section-newslettter-botto
     color: #000000;
   }
   body .rading-our-happy-customes .rating-container .rating {
+    border: 1px solid red;
     width: 145px;
     height: 19.19px;
   }
